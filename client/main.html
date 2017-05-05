@@ -1,0 +1,35 @@
+<head>
+  <title>alyaska.com</title>
+</head>
+
+<body>
+  <div class="container">
+  <h1 data-heading="alyaskaland"> 
+  <span data-heading="alyaskaland">alyaskaland</span>
+  </h1>
+  {{> data-heading}}
+
+  {{> comeHere}}
+    <div>{{> hello}}</div> 
+
+  {{> info}}
+</div>
+</body>
+
+<template name="hello">
+  <button>Click Me many times</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+<template name="data-heading"></template>
+<template name="comeHere">
+  come here
+</template>
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
